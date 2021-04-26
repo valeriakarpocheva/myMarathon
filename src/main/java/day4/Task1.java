@@ -33,7 +33,7 @@ public class Task1 {
         int counterUneven = 0;
         int sum = 0;
         int i;
-        for (i = 0; i < arrayLength; i++){
+        for (i = 0; i < arrayLength; i++) {
             sum += array[i];
             if (array[i] > 8)
                 counter8++;
@@ -41,7 +41,7 @@ public class Task1 {
                 counter1++;
             if (array[i] % 2 == 0)
                 counterEven++;
-            if (array[i] % 2 != 0)
+            else
             counterUneven++;
         }
         System.out.println(counter8);
