@@ -14,7 +14,9 @@ public class Student extends Human {
         super(name);
         this.groupName = groupName;
     }
-
+    public String getHuman(){
+        return "студент";
+    }
     public String getGroupName() {
         return groupName;
     }

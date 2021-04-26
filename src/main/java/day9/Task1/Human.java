@@ -13,7 +13,13 @@ public class Human {
         return name;
     }
 
+    public String getHuman() {
+        return null;
+    }
+
     public void printInfo() {
-        System.out.println("Этот человек с именем" + name);
+
+        System.out.println("Этот человек с именем : " + getName());
+        System.out.println("Этот " + getHuman() + " c именем : " + getName());
     }
 }

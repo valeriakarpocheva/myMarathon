@@ -16,7 +16,9 @@ public class Teacher extends Human {
         super(name);
         this.subjectName = subjectName;
     }
-
+    public String getHuman(){
+        return "преподаватель";
+    }
     public String getSubjectName() {
         return subjectName;
     }
