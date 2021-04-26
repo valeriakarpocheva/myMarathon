@@ -28,38 +28,26 @@ public class Task1 {
 
 
         int counter8 = 0;
-        for (int i = 0; i < arrayLength; i++) {
+        int counter1 = 0;
+        int counterEven = 0;
+        int counterUneven = 0;
+        int sum = 0;
+        int i;
+        for (i = 0; i < arrayLength; i++){
+            sum += array[i];
             if (array[i] > 8)
                 counter8++;
-        }
-        System.out.println(counter8);
-
-
-        int counter1 = 0;
-        for (int i = 0; i < arrayLength; i++) {
             if (array[i] == 1)
                 counter1++;
-        }
-        System.out.println(counter1);
-
-        int counterEven = 0;
-        for (int i = 0; i < arrayLength; i++) {
             if (array[i] % 2 == 0)
                 counterEven++;
-        }
-        System.out.println(counterEven);
-
-        int counterUneven = 0;
-        for (int i = 0; i < arrayLength; i++) {
             if (array[i] % 2 != 0)
-                counterUneven++;
+            counterUneven++;
         }
+        System.out.println(counter8);
+        System.out.println(counter1);
+        System.out.println(counterEven);
         System.out.println(counterUneven);
-
-        int sum = 0;
-        for (int i = 0; i < arrayLength; i++) {
-            sum += array[i];
-        }
         System.out.println(sum);
     }
 }
